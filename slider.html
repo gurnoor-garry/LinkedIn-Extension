@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/slider.css" type="text/css" rel="stylesheet"/>
+  <link rel="stylesheet" href="./js/material/material.min.css">
+  <link rel="stylesheet" href="./js/material/material-design-iconic-font.min.css"/>
+  <link rel="stylesheet" href="./js/material/icon.css"/>
+  <script src="./js/material/material.min.js"></script>
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+</head>
+
+<body>
+<!-- header attempting miserably to add one -->
+<!-- header has custom css trying to emulate a material design style. if possible do add material design css -->
+
+  <div id="closebtn">
+    <span id="closeicon">&times;</span>
+  </div>
+
+<section id="loader-section">
+  <div id="loader"></div>
+</section>
+<section id="extractdatapage" style="display:none;">
+  <div id="slider-content" class="slider-content">
+    <form name="userdetails" id="userdetails">
+      <input type="submit"
+             class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+             id="submitDetails" name="submitDetails" value="Submit"/>
+      <br/>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <label class="labels" for="uname">Candidate Name</label>
+        <input class="mdl-textfield__input" type="text" id="uname" name="uname"/>
+        <label class="mdl-textfield__label" for="uname"></label>
+      </div>
+
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <label class="labels" for="url">Profile URL</label>
+        <input class="mdl-textfield__input" type="text" id="url" name="url" placeholder="linkedin url"/>
+        <label class="mdl-textfield__label" for="url"></label>
+      </div>
+
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <label class="labels" for="phone">Phone</label>
+        <input class="mdl-textfield__input" type="text" id="phone" name="phone" placeholder="phone"/>
+        <label class="mdl-textfield__label" for="url"></label>
+      </div>
+
+
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <label class="labels" for="websites">Websites</label>
+        <input class="mdl-textfield__input" type="text" id="websites" name="websites"
+               placeholder="Websites"/>
+      </div>
+
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <label class="labels" for="location">Location</label>
+        <input class="mdl-textfield__input" type="text" id="location" name="location"
+               placeholder="location"/>
+      </div>
+
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <label class="labels" for="email">Email</label>
+        <div class="tooltip1"><span style="vertical-align: middle; font-size:30px;">&#9432;</span>
+          <span class="tooltiptext1">Select "See contact info" text to retrieve email if it exists.</span>
+        </div>
+        <input class="mdl-textfield__input" type="text" id="email" name="email"
+               placeholder="email address"/>
+      </div>
+
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <label class="labels" for="summary">Summary</label>
+        <textarea rows=3 class="mdl-textfield__input" id="summary" name="summary"></textarea>
+      </div>
+
+
+    </form>
+  </div>
+</section>
+</body>
+<script src="./js/slider.js"></script>
+
+</html>
